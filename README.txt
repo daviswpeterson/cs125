@@ -1,4 +1,4 @@
-BIG PAPA GROUP README FILE
+BIG PAPA GROUP README FILE PHASE 2 
 
 My team includes: Davis, Darian, Daniel, Connor, Luke, and Laurel
 
@@ -13,3 +13,5 @@ Dropschema.sql file info: This SQL file is used to remove all the database objec
 populatesmall.sql file info: This SQL file is responsible for inserting a small amount of realistic data into each of the defined database tables. The data in these tuples may be entirely fictional but should resemble the kind of data that your database will handle. This file is often used for initial testing and ensuring that the database functions as expected.
 
 populatelarge.sql file info: This SQL file generates a substantial amount of data for your database and loads it into the appropriate tables. It typically uses efficient methods like the COPY command in PostgreSQL or its equivalent in MySQL to insert large datasets. The purpose is to simulate a larger dataset for performance testing, scalability assessment, or stress testing.
+
+Collaboration effort: Connor edited the E/R diagram, and Laurel, Luke, Daniel, Darian, and Davis worked and brainstormed together on the four SQL files. 
