@@ -30,16 +30,16 @@ INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number
 
 -- Populating Jobs
 INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, part_time, adjunct, hourly, per_hour_wage, salary, listing_date, end_listing_date) VALUES
-(1, 'Assistant Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-01-15', '2023-02-15'),
-(2, 'Research Analyst', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 60000, '2023-01-20', '2023-02-20'),
-(3, 'Associate Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 90000, '2023-01-25', '2023-02-25'),
-(4, 'Lab Technician', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 50000, '2023-01-30', '2023-02-28'),
-(5, 'Assistant Professor', 'Mathematics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 75000, '2023-02-10', '2023-03-10'),
-(6, 'History Instructor', 'History', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 65000, '2023-02-15', '2023-03-15'),
-(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 95000, '2023-02-20', '2023-03-20'),
-(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 55000, '2023-02-25', '2023-03-25'),
-(9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-03-01', '2023-03-31'),
-(10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05', '2023-04-05');
+(1, 'Assistant Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-01-15 00:00:00', '2023-02-15 00:00:00'),
+(2, 'Research Analyst', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 60000, '2023-01-20 00:00:00', '2023-02-20 00:00:00'),
+(3, 'Associate Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 90000, '2023-01-25 00:00:00', '2023-02-25 00:00:00'),
+(4, 'Lab Technician', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 50000, '2023-01-30 00:00:00', '2023-02-28 00:00:00'),
+(5, 'Assistant Professor', 'Mathematics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 75000, '2023-02-10 00:00:00', '2023-03-10 00:00:00'),
+(6, 'History Instructor', 'History', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 65000, '2023-02-15 00:00:00', '2023-03-15 00:00:00'),
+(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 95000, '2023-02-20 00:00:00', '2023-03-20 00:00:00'),
+(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 55000, '2023-02-25 00:00:00', '2023-03-25 00:00:00'),
+(9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-03-01 00:00:00', '2023-03-31 00:00:00'),
+(10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05 00:00:00', '2023-04-05 00:00:00');
 
 -- Add more tuples as needed...
 
