@@ -11,7 +11,7 @@ INSERT INTO Candidates(degree_level, age, years_experience, previous_occupation,
 ('Bachelors', 32, 6, 'IT', 'Latino', 'None', '6373927643', 'jimi_mudstank@email.com', 'BS in Computer Science', 112233448, 'Male', 'Clear'),
 ('None', 18, 0, 'Student', 'Caucasian', 'Christian', '9836554345', 'skippy_lip@email.com', 'GED', 112233476, 'Male', 'Clear'),
 ('Masters', 66, 40, 'Research Scientist', 'None', 'Christian', '8735467321', 'lid_dip@email.com', 'MS in Data Science', 112233782, 'Male', 'Clear'),
-('Bachelors', 42, 15, 'Professor', 'Latino', 'Christian', '8735647625', 'stank_towel@email.com', 'BS in Data Science', 112233872, 'Female', 'Clear'),
+('Bachelors', 42, 15, 'Professor', 'Latino', 'Christian', '8735647625', 'stank_towel@email.com', 'BS in Data Science', 112233872, 'Female', 'Clear');
 -- Add more tuples as needed...
 
 -- Populating Departments
@@ -25,7 +25,7 @@ INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number
 ('Economics', 'ECON', 75, 40, 'Business'),
 ('Psychology', 'PSYCH', 60, 35, 'Social Sciences'),
 ('Mechanical Engineering', 'ME', 95, 70, 'Engineering'),
-('English', 'ENG', 80, 45, 'Humanities')  
+('English', 'ENG', 80, 45, 'Humanities');
 -- Add more tuples as needed...
 
 -- Populating Jobs
