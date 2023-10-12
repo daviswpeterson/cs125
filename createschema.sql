@@ -24,8 +24,8 @@ CREATE TABLE Jobs (
     hourly BOOLEAN,
     per_hour_wage FLOAT,
     salary INT,
-    listing_date DATELINE,
-    end_listing_date DATELINE,
+    listing_date DATETIME,
+    end_listing_date DATETIME,
     position_title VARCHAR(255),
 );
 
