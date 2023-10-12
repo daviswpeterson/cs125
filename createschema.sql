@@ -29,27 +29,23 @@ CREATE TABLE Jobs (
     position_title VARCHAR(255),
 );
 
-CREATE TABLE Applications_Received (
+CREATE TABLE Applications (
     application_id INT NOT NULL,
-    department VARCHAR(255),
+    job VARCHAR(255),
     position VARCHAR(255),
     tenure_track BOOLEAN,
-    date DATE,
-    person VARCHAR(255),  -- Assuming the 'person' attribute is a VARCHAR for now. You may want to reference the Candidates table if this refers to a specific candidate.
+    date DATETIME,
+    candidate VARCHAR(255),
 );
 
-CREATE TABLE Offer_Letters (
+CREATE TABLE Letters (
     offer_id INT NOT NULL,
-    job_title VARCHAR(255),
-    salary INT,
-    start_date DATE,
+    rejection_id INT NOT NULL,
+    offer_or_rejection VARCHAR(255),
+    job VARCHAR(255),
+    start_date DATETIME,
     next_steps VARCHAR(255),
-);
-
-CREATE TABLE Rejection_Letters (
-    offer_id INT NOT NULL,
-    person VARCHAR(255),
-    rejection_date DATE,
+    rejection_date DATETIME,
     denial_reason VARCHAR(255),
 );
 
@@ -58,4 +54,5 @@ CREATE TABLE Departments (
     abbreviation VARCHAR(255),
     max_faculty_capacity INT,
     current_number_of_faculty INT,
+    academic_division VARCHAR(255),
 );
