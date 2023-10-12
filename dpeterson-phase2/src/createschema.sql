@@ -26,7 +26,7 @@ CREATE TABLE Jobs (
     salary INT,
     listing_date DATETIME,
     end_listing_date DATETIME,
-    openings VARCHAR(255),
+    openings INT,
 );
 
 CREATE TABLE Applications (
