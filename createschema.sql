@@ -6,31 +6,27 @@ CREATE TABLE Candidates (
     race VARCHAR(255),
     religious_affiliation VARCHAR(255),
     phone_number INT,
-    email_address VARCHAR(255),
+    email VARCHAR(255),
     last_degree_issued VARCHAR(255),
     ssn INT NOT NULL,
     gender VARCHAR(255),
     background_check_data VARCHAR(255),
-    PRIMARY KEY(ssn)
 );
 
 CREATE TABLE Jobs (
     job_id INT NOT NULL,
     position_title VARCHAR(255),
     department VARCHAR(255),
-    tenure BOOLEAN,
+    tenure_track BOOLEAN,
     full_time BOOLEAN,
     part_time BOOLEAN,
     adjunct BOOLEAN,
-    alumnus BOOLEAN,
     hourly BOOLEAN,
     per_hour_wage FLOAT,
     salary INT,
     listing_date VARCHAR(255),
     end_listing_date VARCHAR(255),
-    status_of_position VARCHAR(255),
-    opening BOOLEAN,
-    PRIMARY KEY (job_id)
+    position_title VARCHAR(255),
 );
 
 CREATE TABLE Applications_Received (
@@ -40,7 +36,6 @@ CREATE TABLE Applications_Received (
     tenure_track BOOLEAN,
     date DATE,
     person VARCHAR(255),  -- Assuming the 'person' attribute is a VARCHAR for now. You may want to reference the Candidates table if this refers to a specific candidate.
-    PRIMARY KEY (application_id)
 );
 
 CREATE TABLE Offer_Letters (
@@ -49,7 +44,6 @@ CREATE TABLE Offer_Letters (
     salary INT,
     start_date DATE,
     next_steps VARCHAR(255),
-    PRIMARY KEY (offer_id)
 );
 
 CREATE TABLE Rejection_Letters (
@@ -57,7 +51,6 @@ CREATE TABLE Rejection_Letters (
     person VARCHAR(255),
     rejection_date DATE,
     denial_reason VARCHAR(255),
-    PRIMARY KEY (offer_id)
 );
 
 CREATE TABLE Departments (
@@ -65,5 +58,4 @@ CREATE TABLE Departments (
     abbreviation VARCHAR(255),
     max_faculty_capacity INT,
     current_number_of_faculty INT,
-    PRIMARY KEY (name)
 );
