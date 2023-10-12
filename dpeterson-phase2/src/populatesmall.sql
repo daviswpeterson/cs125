@@ -30,46 +30,43 @@ INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number
 
 -- Populating Jobs
 INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, part_time, adjunct, hourly, per_hour_wage, salary, listing_date, end_listing_date) VALUES
-(1, 'Assistant Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-01-15 00:00:00', '2023-02-15 00:00:00'),
-(2, 'Research Analyst', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 60000, '2023-01-20 00:00:00', '2023-02-20 00:00:00'),
-(3, 'Associate Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 90000, '2023-01-25 00:00:00', '2023-02-25 00:00:00'),
-(4, 'Lab Technician', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 50000, '2023-01-30 00:00:00', '2023-02-28 00:00:00'),
-(5, 'Assistant Professor', 'Mathematics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 75000, '2023-02-10 00:00:00', '2023-03-10 00:00:00'),
-(6, 'History Instructor', 'History', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 65000, '2023-02-15 00:00:00', '2023-03-15 00:00:00'),
-(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 95000, '2023-02-20 00:00:00', '2023-03-20 00:00:00'),
-(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 55000, '2023-02-25 00:00:00', '2023-03-25 00:00:00'),
-(9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-03-01 00:00:00', '2023-03-31 00:00:00'),
-(10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05 00:00:00', '2023-04-05 00:00:00');
-
+(1, 'Assistant Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-01-15 08:00:00', '2023-02-15 16:30:00'),
+(2, 'Research Analyst', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 60000, '2023-01-20 09:15:00', '2023-02-20 15:45:00'),
+(3, 'Associate Professor', 'Computer Science', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 90000, '2023-01-25 10:30:00', '2023-02-25 14:20:00'),
+(4, 'Lab Technician', 'Biology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 50000, '2023-01-30 11:45:00', '2023-02-28 17:10:00'),
+(5, 'Assistant Professor', 'Mathematics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 75000, '2023-02-10 12:20:00', '2023-03-10 14:50:00'),
+(6, 'History Instructor', 'History', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 65000, '2023-02-15 13:35:00', '2023-03-15 16:25:00'),
+(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 95000, '2023-02-20 14:40:00', '2023-03-20 15:55:00'),
+(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 55000, '2023-02-25 15:55:00', '2023-03-25 18:30:00'),
+(9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-03-01 16:45:00', '2023-03-31 19:15:00'),
+(10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05 17:30:00', '2023-04-05 20:00:00');
 -- Add more tuples as needed...
 
 -- Populating Applications
 INSERT INTO Applications(application_id, job, position, tenure_track, date, candidate) VALUES
-(1, 'Assistant Professor', 'Computer Science', TRUE, '2023-01-20', 'john_doe@email.com'),
-(2, 'Research Analyst', 'Biology', FALSE, '2023-01-22', 'jane_doe@email.com'),
-(3, 'Associate Professor', 'Computer Science', TRUE, '2023-01-25', 'alice@email.com'),
-(4, 'Lab Technician', 'Biology', FALSE, '2023-01-28', 'bob@email.com'),
-(5, 'Assistant Professor', 'Mathematics', TRUE, '2023-02-05', 'carol@email.com'),
-(6, 'History Instructor', 'History', TRUE, '2023-02-10', 'dave@email.com'),
-(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, '2023-02-15', 'emily@email.com'),
-(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, '2023-02-20', 'frank@email.com'),
-(9, 'Economics Professor', 'Economics', TRUE, '2023-02-25', 'grace@email.com'),
-(10, 'Psychology Researcher', 'Psychology', FALSE, '2023-03-01', 'henry@email.com');
+(1, 'Assistant Professor', 'Computer Science', TRUE, '2023-01-20 09:30:00', 'john_doe@email.com'),
+(2, 'Research Analyst', 'Biology', FALSE, '2023-01-22 10:45:00', 'jane_doe@email.com'),
+(3, 'Associate Professor', 'Computer Science', TRUE, '2023-01-25 11:15:00', 'alice@email.com'),
+(4, 'Lab Technician', 'Biology', FALSE, '2023-01-28 12:30:00', 'bob@email.com'),
+(5, 'Assistant Professor', 'Mathematics', TRUE, '2023-02-05 13:45:00', 'carol@email.com'),
+(6, 'History Instructor', 'History', TRUE, '2023-02-10 14:00:00', 'dave@email.com'),
+(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, '2023-02-15 15:20:00', 'emily@email.com'),
+(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, '2023-02-20 16:30:00', 'frank@email.com'),
+(9, 'Economics Professor', 'Economics', TRUE, '2023-02-25 17:45:00', 'grace@email.com'),
+(10, 'Psychology Researcher', 'Psychology', FALSE, '2023-03-01 18:00:00', 'henry@email.com');
 
 -- Populating Letters
 INSERT INTO Letters(letter_id, offer_or_rejection, job, start_date, next_steps, rejection_date, denial_reason) VALUES
-(1, 'Offer', 'Assistant Professor', '2023-08-15', 'Please confirm by 2023-03-01', NULL, NULL),
-(2, 'Rejection', 'Research Analyst', NULL, NULL, '2023-02-05', 'Position Filled'),
-(3, 'Offer', 'Associate Professor', '2023-09-01', 'Please confirm by 2023-03-10', NULL, NULL),
-(4, 'Rejection', 'Lab Technician', NULL, NULL, '2023-02-10', 'Candidate not qualified'),
-(5, 'Offer', 'Assistant Professor', '2023-09-15', 'Please confirm by 2023-03-20', NULL, NULL),
-(6, 'Rejection', 'Research Analyst', NULL, NULL, '2023-02-15', 'Skills mismatch'),
-(7, 'Offer', 'History Instructor', '2023-10-01', 'Please confirm by 2023-03-25', NULL, NULL),
-(8, 'Rejection', 'Electrical Engineer', NULL, NULL, '2023-02-20', 'Experience not suitable'),
-(9, 'Offer', 'Chemistry Lab Assistant', '2023-10-15', 'Please confirm by 2023-04-01', NULL, NULL),
-(10, 'Rejection', 'Economics Professor', NULL, NULL, '2023-02-25', 'Position already filled');
-
-
+(1, 'Offer', 'Assistant Professor', '2023-08-15 09:30:00', 'Please confirm by 2023-03-01 10:45:00', NULL, NULL),
+(2, 'Rejection', 'Research Analyst', NULL, NULL, '2023-02-05 12:15:00', 'Position Filled'),
+(3, 'Offer', 'Associate Professor', '2023-09-01 11:00:00', 'Please confirm by 2023-03-10 13:30:00', NULL, NULL),
+(4, 'Rejection', 'Lab Technician', NULL, NULL, '2023-02-10 14:45:00', 'Candidate not qualified'),
+(5, 'Offer', 'Assistant Professor', '2023-09-15 15:00:00', 'Please confirm by 2023-03-20 16:15:00', NULL, NULL),
+(6, 'Rejection', 'Research Analyst', NULL, NULL, '2023-02-15 17:30:00', 'Skills mismatch'),
+(7, 'Offer', 'History Instructor', '2023-10-01 18:45:00', 'Please confirm by 2023-03-25 19:00:00', NULL, NULL),
+(8, 'Rejection', 'Electrical Engineer', NULL, NULL, '2023-02-20 20:15:00', 'Experience not suitable'),
+(9, 'Offer', 'Chemistry Lab Assistant', '2023-10-15 21:30:00', 'Please confirm by 2023-04-01 22:45:00', NULL, NULL),
+(10, 'Rejection', 'Economics Professor', NULL, NULL, '2023-03-05 23:00:00', 'Position already filled');
 
 
 -- Add more tuples as needed...
