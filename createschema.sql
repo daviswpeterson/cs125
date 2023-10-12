@@ -39,8 +39,7 @@ CREATE TABLE Applications (
 );
 
 CREATE TABLE Letters (
-    offer_id INT NOT NULL,
-    rejection_id INT NOT NULL,
+    letter_id INT NOT NULL,
     offer_or_rejection VARCHAR(255),
     job VARCHAR(255),
     start_date DATETIME,
