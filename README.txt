@@ -14,14 +14,10 @@ populatesmall.sql file info: This SQL file is responsible for inserting a small 
 
 populatelarge.sql file info: This SQL file generates a substantial amount of data for your database and loads it into the appropriate tables. It typically uses efficient methods like the COPY command in PostgreSQL or its equivalent in MySQL to insert large datasets. The purpose is to simulate a larger dataset for performance testing, scalability assessment, or stress testing.
 
-Collaboration effort: How the work was distributed and the primary workers on each file.
-- createsqlschema.sql: 
-- dropschema.sql: 
-- populatesmall.sql: 
-- populatelarge.sql: 
-- ProjectOverview.docx: Entire Group
-- Relations.docx: Entire Group
-- crogstadERdiagram.erdplus: Connor
-- crogstadERdiagram.png: Connor
-- README.txt:
-- candidates_large.csv: 
+Collaboration effort: How the work was distributed and the primary workers on each piece of the project.
+
+- Connor edited and updated the E/R diagram, relations, and docx file
+- Laurel and Luke worked on the two populating SQL files and how to implement them 
+- Daniel and Darian worked on brainstorming ideas on how to implement the Drop and Create schema files while Laurel and Luke assisted with helping write the actual code
+- Davis helped organize and review the files and figure out how to submit the files properly
+- Darian wrote and edited this README file
