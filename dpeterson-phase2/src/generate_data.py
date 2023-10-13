@@ -39,7 +39,7 @@ with open('jobs.csv', 'w', newline='') as file:
             random.randint(50000, 150000),
             f"{random.randint(2000,2023)}-{random.randint(1,12):02d}-{random.randint(1,28):02d} {random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
             f"{random.randint(2000,2023)}-{random.randint(1,12):02d}-{random.randint(1,28):02d} {random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
-            random.randint(0, 20)
+            random.randint(1, 10)
         ])
 
 with open('applications.csv', 'w', newline='') as file:
