@@ -12,7 +12,6 @@ INSERT INTO Candidates(degree_level, age, years_experience, previous_occupation,
 ('None', 18, 0, 'Student', 'Caucasian', 'Christian', '9836554345', 'skippy_lip@email.com', 'GED', 112233476, 'Male', 'Clear'),
 ('Masters', 66, 40, 'Research Scientist', 'None', 'Christian', '8735467321', 'lid_dip@email.com', 'MS in Data Science', 112233782, 'Male', 'Clear'),
 ('Bachelors', 42, 15, 'Professor', 'Latino', 'Christian', '8735647625', 'stank_towel@email.com', 'BS in Data Science', 112233872, 'Female', 'Clear');
--- Add more tuples as needed...
 
 -- Populating Departments
 INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number_of_faculty, academic_division) VALUES
@@ -26,7 +25,6 @@ INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number
 ('Psychology', 'PSYCH', 60, 35, 'Social Sciences'),
 ('Mechanical Engineering', 'ME', 95, 70, 'Engineering'),
 ('English', 'ENG', 80, 45, 'Humanities');
--- Add more tuples as needed...
 
 -- Populating Jobs
 INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, part_time, adjunct, hourly, per_hour_wage, salary, listing_date, end_listing_date, openings) VALUES
@@ -40,7 +38,6 @@ INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, pa
 (8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 55000, '2023-02-25 15:55:00', '2023-03-25 18:30:00', 9),
 (9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-03-01 16:45:00', '2023-03-31 19:15:00', 2),
 (10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05 17:30:00', '2023-04-05 20:00:00', 1);
--- Add more tuples as needed...
 
 -- Populating Applications
 INSERT INTO Applications(application_id, job, position, tenure_track, date, candidate) VALUES
@@ -67,7 +64,3 @@ INSERT INTO Letters(letter_id, offer_or_rejection, job, start_date, next_steps, 
 (8, 'Rejection', 'Electrical Engineer', NULL, NULL, '2023-02-20 20:15:00', 'Experience not suitable'),
 (9, 'Offer', 'Chemistry Lab Assistant', '2023-10-15 21:30:00', 'Please confirm by 2023-04-01 22:45:00', NULL, NULL),
 (10, 'Rejection', 'Economics Professor', NULL, NULL, '2023-03-05 23:00:00', 'Position already filled');
-
-
--- Add more tuples as needed...
-
