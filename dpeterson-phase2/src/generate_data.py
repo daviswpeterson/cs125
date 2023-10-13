@@ -24,7 +24,7 @@ with open('candidates.csv', 'w', newline='') as file:
 
 with open('jobs.csv', 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["job_id", "position_title", "department", "tenure_track", "full_time", "part_time", "adjunct", "hourly", "per_hour_wage", "salary", "listing_date", "end_listing_date", "position_title"])
+    writer.writerow(["job_id", "position_title", "department", "tenure_track", "full_time", "part_time", "adjunct", "hourly", "per_hour_wage", "salary", "listing_date", "end_listing_date", "openings"])
     for i in range(10000):
         writer.writerow([
             i,
@@ -39,7 +39,7 @@ with open('jobs.csv', 'w', newline='') as file:
             random.randint(50000, 150000),
             f"{random.randint(2000,2023)}-{random.randint(1,12):02d}-{random.randint(1,28):02d} {random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
             f"{random.randint(2000,2023)}-{random.randint(1,12):02d}-{random.randint(1,28):02d} {random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
-            random.choice(["Professor", "Associate Professor", "Assistant Professor"])
+            random.randint(0, 20)
         ])
 
 with open('applications.csv', 'w', newline='') as file:
