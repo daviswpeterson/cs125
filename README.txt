@@ -2,7 +2,7 @@ BIG PAPA GROUP README FILE PHASE 2
 
 My team includes: Davis, Darian, Daniel, Connor, Luke, and Laurel
 
-Authors: Connor Rogstead, Daniel Patterson, Luke Rozinskas, Laurel Payne, Darian Choi, Davis Peterson 
+Authors: Connor Rogstad, Daniel Patterson, Luke Rozinskas, Laurel Payne, Darian Choi, Davis Peterson 
 
 PHASE 2 FILES: 
 
