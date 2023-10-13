@@ -1,6 +1,35 @@
--- For PostgreSQL
-COPY Candidates FROM '/Users/laurelpayne/Desktop/Gen/candidates.csv' DELIMITER ',' CSV HEADER;
-COPY Applications FROM '/Users/laurelpayne/Desktop/Gen/applications.csv' DELIMITER ',' CSV HEADER;
-COPY Departments FROM '/Users/laurelpayne/Desktop/Gen/departments.csv' DELIMITER ',' CSV HEADER;
-COPY Jobs FROM '/Users/laurelpayne/Desktop/Gen/jobs.csv' DELIMITER ',' CSV HEADER;
-COPY Letters FROM '/Users/laurelpayne/Desktop/Gen/letters.csv' DELIMITER ',' CSV HEADER;
+-- For MariaDB (MySQL)
+LOAD DATA INFILE '/Desktop/cs125/crogstad-phase2/candidates.csv'
+INTO TABLE Candidates
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+LOAD DATA INFILE '/Desktop/cs125/crogstad-phase2/applications.csv'
+INTO TABLE Applications
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+LOAD DATA INFILE '/Desktop/cs125/crogstad-phase2/departments.csv'
+INTO TABLE Departments
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+LOAD DATA INFILE '/Desktop/cs125/crogstad-phase2/jobs.csv'
+INTO TABLE Jobs
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+LOAD DATA INFILE '/Desktop/cs125/crogstad-phase2/letters.csv'
+INTO TABLE Letters
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
