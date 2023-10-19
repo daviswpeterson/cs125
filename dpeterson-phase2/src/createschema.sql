@@ -5,10 +5,10 @@ CREATE TABLE Candidates (
     previous_occupation VARCHAR(255),
     race VARCHAR(255),
     religious_affiliation VARCHAR(255),
-    phone_number INT,
+    phone_number BIGINT,
     email VARCHAR(255),
     last_degree_issued VARCHAR(255),
-    ssn INT NOT NULL,
+    ssn BIGINT NOT NULL,
     gender VARCHAR(255),
     background_check_data VARCHAR(255)
 );
