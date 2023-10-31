@@ -41,7 +41,7 @@ Query: What are the jobs that have been listed that have not ended yet?
 */
 SELECT *
 FROM Jobs
-WHERE end_listing_date > GETDATE();
+WHERE end_listing_date > CURRENT_TIMESTAMP;
 
 
 
