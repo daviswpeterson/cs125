@@ -2,8 +2,8 @@
 /*
 Goal 1: Insert a new job computer science assistant professor listing into the Jobs table.
 */
-INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, part_time, adjunct, hourly, per_hour_wage, salary ,listing_date, end_listing_date, openings)
-VALUES (10000, 'Assistant Professor', 'Computer Science', FALSE, TRUE, FALSE, FALSE, FALSE,  '2023-04-04 20:00:00', '2023-07-10 20:00:00', 1);
+INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, part_time, adjunct, hourly, per_hour_wage, salary, listing_date, end_listing_date, openings)
+VALUES (10000, 'Assistant Professor', 'Computer Science', FALSE, TRUE, FALSE, FALSE, FALSE, 88.00, 90000, '2023-04-04 20:00:00', '2023-07-10 20:00:00', 1);
 
 /*
 Goal 2: Update the salary for the new computer science job listing we added.
