@@ -5,12 +5,15 @@ Query objective: Retrieve the details of candidates who have applied for an Asso
 Query: Who are the candidates that have applied for an associate professor position? 
 */
 SELECT Candidates.*, Applications.date
-FROM Candidates 
-JOIN Applications ON Candidates.email = Applications.candidate
-WHERE Applications.job = 'Associate Professor';
+FROM Candidates
+WHERE Candidates.email IN (
+    SELECT Applications.candidate
+    FROM Applications
+    WHERE Applications.job = 'Associate Professor'
+);
 
 
-  
+
 /*
 Query Objective: Find the average salary for all the jobs listed in the database.
 
