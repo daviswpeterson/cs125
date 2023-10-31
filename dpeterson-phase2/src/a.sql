@@ -6,7 +6,7 @@ Query: Who are the candidates that have applied for an associate professor posit
 */
 SELECT Candidates.*, Applications.Date
 FROM Candidates 
-INNER JOIN Applications ON Candidates.Email = Applications.Candidate
+INNER JOIN Applications ON Candidates.Email = Applications.candidate
 WHERE Applications.Job = 'Associate Professor';
   
 /*
