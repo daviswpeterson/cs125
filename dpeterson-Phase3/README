@@ -15,7 +15,8 @@ Additionally, it includes queries utilizing these views, limited by the LIMIT cl
 'dropschema.sql' script is updated to ensure the CASCADE option is applied for seamless removal of associated elements.
 d.sql -
 
-GROUP WORK DISTRIBUTION
+Collaboration effort: How the work was distributed and the primary workers on each piece of the project.
+
 - a.SQL: Darian and Daniel came up with the initial questions that our database should answer and Connor put it into SQL form 
 - b.SQL: Davis and Connor worked on the data modifications and writing the code 
 - c.SQL: Luke came up with the two views
