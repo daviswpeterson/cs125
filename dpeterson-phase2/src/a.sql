@@ -7,7 +7,7 @@ Query: Who are the candidates that have applied for an associate professor posit
 SELECT Candidates.*, Applications.date
 FROM Candidates
 WHERE Candidates.email IN (
-    SELECT Applications.candidate
+    SELECT Applications.candidate, Application.date
     FROM Applications
     WHERE Applications.job = 'Associate Professor'
 );
