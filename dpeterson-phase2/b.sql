@@ -26,6 +26,11 @@ SET max_faculty_capacity = max_faculty_capacity + 2
 WHERE name = 'Computer Science';
 
 /*
-Goal 5: 
+Goal 5:Suppose you are looking for a little more wisdom in the department, and want to give an edge 
+to older candidates before they pass through your algorithm for cutting candidates who don’t have 
+enough qualifications. So, for any candidate aged between 55 and 70, you reduce their age by five years. 
 */
-SELECT * FROM *
+UPDATE Candidates
+SET age = age - 5
+WHERE age >= 55 AND age <= 70;
+
