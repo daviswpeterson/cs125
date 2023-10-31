@@ -6,10 +6,10 @@ CREATE INDEX degree_index ON Candidates(degree_level) ;
 
 CREATE INDEX real_job_id ON Jobs(job_id, position_title);
 
-EXPLAIN SELECT Candidates.*, Applications.date
-FROM Candidates 
-INNER JOIN Applications ON Candidates.email = Applications.candidate
-WHERE Applications.job = 'Associate Professor';
+EXPLAIN SELECT *
+FROM Jobs
+WHERE Openings > 5;
+
 
 
 EXPLAIN SELECT AVG(salary) AS AverageSalary
@@ -42,10 +42,9 @@ DROP INDEX real_job_id ON Jobs;
 
 /* Running timed sequences for the Queries */
 
-EXPLAIN SELECT Candidates.*, Applications.date
-FROM Candidates 
-INNER JOIN Applications ON Candidates.email = Applications.candidate
-WHERE Applications.job = 'Associate Professor';
+EXPLAIN SELECT *
+FROM Jobs
+WHERE Openings > 5;
 
 
 EXPLAIN SELECT AVG(salary) AS AverageSalary
