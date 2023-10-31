@@ -38,4 +38,4 @@ WHERE degree_level = 'PhD' AND years_experience > 10;
 
 EXPLAIN SELECT *
 FROM Jobs
-WHERE end_listing_date > GETDATE();
+WHERE end_listing_date > TIMESTAMP;
