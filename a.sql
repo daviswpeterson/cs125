@@ -1,39 +1,42 @@
 
 /*
-Question 1: Retrieve the details of candidates who have applied for an Associate Professor position along with their contact information.
+Query objective: Retrieve the details of candidates who have applied for an Associate Professor position along with their contact information.
+
+Query: Who are the candidates that have applied for an associate professor position? 
 */
-SELECT Candidates.*, Applications.date
+SELECT Candidates.*, Applications.Date
 FROM Candidates 
-INNER JOIN Applications ON Candidates.email = Applications.Candidate
-WHERE Applications.job = 'Associate Professor';
-
+INNER JOIN Applications ON Candidates.Email = Applications.Candidate
+WHERE Applications.Job = 'Associate Professor';
+  
 /*
-Question 2: Find the average salary for all the jobs listed in the database.
+Query Objective: Find the average salary for all the jobs listed in the database.
+
+Query: What is the average salary for all jobs?
 */
-SELECT AVG(salary) AS AverageSalary
+SELECT AVG(Salary) AS AverageSalary
 FROM Jobs;
-
   
 /*
-Question 3: Find the department with the maximum number of faculty capacity.
+Query Objective: Find the department with the maximum number of faculty capacity.
+Query: Which department is able to have the most amount of faculty members?
 */
-SELECT name, max_faculty_capacity
+SELECT Name, Max_Faculty_Capacity
 FROM Departments
-WHERE max_faculty_capacity = (SELECT MAX(max_faculty_capacity) FROM Departments);
-
-
+WHERE Max_Faculty_Capacity = (SELECT MAX(Max_Faculty_Capacity) FROM Departments);
   
 /*
-Question 4: Retrieve the details of candidates who have a PhD and more than 10 years of experience.
+Query Objective: Retrieve the details of candidates who have a PhD and more than 10 years of experience.
+Query: Who are the candidates with a PHD and at least 10 years of experience?
 */
 SELECT *
 FROM Candidates
-WHERE degree_level = 'PhD' AND years_experience > 10;
-
+WHERE Degree_Level = 'PhD' AND Years_of_Experience > 10;
+  
 /*
-Question 5: Find the job listings that have not yet ended.
+Query Objective:: Find the job listings that have not yet ended.
+Query: What are the jobs that have been listed that have not ended yet?
 */
 SELECT *
 FROM Jobs
-WHERE end_listing_date > GETDATE();
-
+WHERE End_Listing_Date > GETDATE();
