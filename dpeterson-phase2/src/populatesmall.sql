@@ -3,9 +3,9 @@
 -- Populating Candidates
 INSERT INTO Candidates(degree_level, age, years_experience, previous_occupation, race, religious_affiliation, phone_number, email, last_degree_issued, ssn, gender, background_check_data) VALUES
 ('PhD', 32, 8, 'Research Scientist', 'Asian', 'None', '1234567890', 'john_doe@email.com', 'PhD in Computer Science', 111223333, 'Male', 'Clear'),
-('Masters', 28, 5, 'Data Analyst', 'Caucasian', 'Christian', '2345678901', 'jane_doe@email.com', 'MS in Data Science', 112233445, 'Female', 'Clear'),
+('Masters', 28, 5, 'Data Analyst', 'Caucasian', 'Christian', '2345678901', 'alice@email.com', 'MS in Data Science', 112233445, 'Female', 'Clear'),
 ('Bachelors', 45, 13, 'Professor', 'Caucasian', 'Christian', '4678639083', 'jeff_white@email.com', 'BS in Data Science', 112233446, 'Male', 'Clear'),
-('PhD', 37, 12, 'Web Developer', 'African American', 'None', '8735658478', 'rebecca_light@email.com', 'PhD in Computer Science', 112233447, 'Female', 'Clear'),
+('PhD', 37, 12, 'Web Developer', 'African American', 'None', '8735658478', 'alice@email.com', 'PhD in Computer Science', 112233447, 'Female', 'Clear'),
 ('Bachelors', 55, 28, 'Data Analyst', 'Caucasian', 'Christian', '0276472908', 'alice@email.com', 'BS in Data Science', 112233449, 'Female', 'Clear'),
 ('Masters', 44, 20, 'Professor', 'Asian', 'Christian', '9835482618', 'clip_hamstring@email.com', 'MS in Computer Science', 112233442, 'Male', 'Clear'),
 ('Bachelors', 32, 6, 'IT', 'Latino', 'None', '6373927643', 'jimi_mudstank@email.com', 'BS in Computer Science', 112233448, 'Male', 'Clear'),
