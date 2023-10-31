@@ -9,9 +9,9 @@ INSERT INTO Candidates(degree_level, age, years_experience, previous_occupation,
 ('Bachelors', 55, 28, 'Data Analyst', 'Caucasian', 'Christian', '0276472908', 'alice@email.com', 'BS in Data Science', 112233449, 'Female', 'Clear'),
 ('Masters', 44, 20, 'Professor', 'Asian', 'Christian', '9835482618', 'clip_hamstring@email.com', 'MS in Computer Science', 112233442, 'Male', 'Clear'),
 ('Bachelors', 32, 6, 'IT', 'Latino', 'None', '6373927643', 'jimi_mudstank@email.com', 'BS in Computer Science', 112233448, 'Male', 'Clear'),
-('None', 18, 0, 'Student', 'Caucasian', 'Christian', '9836554345', 'skippy_lip@email.com', 'GED', 112233476, 'Male', 'Clear'),
-('Masters', 66, 40, 'Research Scientist', 'None', 'Christian', '8735467321', 'lid_dip@email.com', 'MS in Data Science', 112233782, 'Male', 'Clear'),
-('Bachelors', 42, 15, 'Professor', 'Latino', 'Christian', '8735647625', 'stank_towel@email.com', 'BS in Data Science', 112233872, 'Female', 'Clear');
+('PhD', 35, 10, 'Associate Professor', 'Caucasian', 'None', '1234567890', 'associate_prof1@email.com', 'PhD in Physics', '112233873', 'Male', 'Clear'),
+('Masters', 40, 15, 'Associate Professor', 'Asian', 'Buddhist', '2345678901', 'associate_prof2@email.com', 'MS in Mathematics', '112233874', 'Female', 'Clear'),
+('PhD', 38, 12, 'Associate Professor', 'African American', 'Christian', '3456789012', 'associate_prof3@email.com', 'PhD in Biology', '112233875', 'Male', 'Clear');
 
 -- Populating Departments
 INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number_of_faculty, academic_division) VALUES
@@ -48,9 +48,10 @@ INSERT INTO Applications(application_id, job, position, tenure_track, date, cand
 (5, 'Assistant Professor', 'Mathematics', TRUE, '2023-02-05 13:45:00', 'carol@email.com'),
 (6, 'History Instructor', 'History', TRUE, '2023-02-10 14:00:00', 'dave@email.com'),
 (7, 'Electrical Engineer', 'Electrical Engineering', TRUE, '2023-02-15 15:20:00', 'emily@email.com'),
-(8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, '2023-02-20 16:30:00', 'frank@email.com'),
-(9, 'Economics Professor', 'Economics', TRUE, '2023-02-25 17:45:00', 'grace@email.com'),
-(10, 'Psychology Researcher', 'Psychology', FALSE, '2023-03-01 18:00:00', 'henry@email.com');
+(8, 'Associate Professor', 'Computer Science', TRUE, '2023-01-28', 'associate_prof1@email.com'),
+(9, 'Associate Professor', 'Mathematics', TRUE, '2023-02-02', 'associate_prof2@email.com'),
+(10, 'Associate Professor', 'Biology', TRUE, '2023-02-05', 'associate_prof3@email.com');
+
 
 -- Populating Letters
 INSERT INTO Letters(letter_id, offer_or_rejection, job, start_date, next_steps, rejection_date, denial_reason) VALUES
