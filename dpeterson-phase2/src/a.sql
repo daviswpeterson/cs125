@@ -1,11 +1,11 @@
 
 /*
 Query objective: Retrieve the job listings with more than 5 openings available
-Query: Job listings with more then 5 openings?
+Query: Job listings with more then 5 openings? */
 
 SELECT *
 FROM Jobs
-WHERE Openings > 5;
+WHERE openings > 5;
 
 
 
