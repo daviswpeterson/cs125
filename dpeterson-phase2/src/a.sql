@@ -1,16 +1,12 @@
 
 /*
-Query objective: Retrieve the details of candidates who have applied for an Associate Professor position along with their contact information.
+Query objective: Retrieve the job listings with more than 5 openings available
+Query: Job listings with more then 5 openings?
 
-Query: Who are the candidates that have applied for an associate professor position? 
-*/
-SELECT Candidates.*, Applications.date
-FROM Candidates
-WHERE Candidates.email IN (
-    SELECT Applications.candidate, Application.date
-    FROM Applications
-    WHERE Applications.job = 'Associate Professor'
-);
+SELECT *
+FROM Jobs
+WHERE Openings > 5;
+
 
 
 
