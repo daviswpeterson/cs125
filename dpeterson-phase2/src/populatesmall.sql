@@ -36,7 +36,7 @@ INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, pa
 (6, 'History Instructor', 'History', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 65000, '2023-02-15 13:35:00', '2023-03-15 16:25:00', 3),
 (7, 'Electrical Engineer', 'Electrical Engineering', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 95000, '2023-02-20 14:40:00', '2023-03-20 15:55:00', 1),
 (8, 'Chemistry Lab Assistant', 'Chemistry', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 55000, '2023-02-25 15:55:00', '2023-03-25 18:30:00', 9),
-(9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-03-01 16:45:00', '2023-12-12 19:15:00', 2),
+(9, 'Economics Professor', 'Economics', TRUE, TRUE, FALSE, FALSE, FALSE, NULL, 80000, '2023-05-05 16:45:00', '2023-12-12 19:15:00', 2),
 (10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05 17:30:00', '2023-04-05 20:00:00', 1);
 
 -- Populating Applications
