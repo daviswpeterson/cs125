@@ -8,7 +8,7 @@ CREATE INDEX real_job_id ON Jobs(job_id, position_title);
 
 EXPLAIN SELECT *
 FROM Jobs
-WHERE Openings > 5;
+WHERE openings > 5;
 
 
 
@@ -44,7 +44,7 @@ DROP INDEX real_job_id ON Jobs;
 
 EXPLAIN SELECT *
 FROM Jobs
-WHERE Openings > 5;
+WHERE openings > 5;
 
 
 EXPLAIN SELECT AVG(salary) AS AverageSalary
