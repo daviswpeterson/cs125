@@ -2,4 +2,24 @@ PHASE 3 README FILE BIG PAPA GROUP
 GROUP MEMBERS: Davis Peterson, Connor Rogstad, Daniel Patterson, Darian Choi 
 Author: Darian Choi 
 
+PHASE 3 FILES
 
+a.sql - The 'a.sql' file contains SQL queries that retrieve wanted information from the database, 
+answering specific questions related to candidate applications, salaries, faculty capacity, candidate 
+qualifications, and departmental statistics. 
+b.sql - The 'b.sql' file contains five SQL data modification commands that utilize advanced features 
+such as updating multiple tuples, deleting specific sets of tuples, and inserting query results. 
+These commands are tailored to ensure efficient management and manipulation of the database while maintaining data integrity.
+c.sql - The 'c.sql' file generates two purposeful views within the database, facilitating efficient data analysis and retrieval.
+Additionally, it includes queries utilizing these views, limited by the LIMIT clause for concise output, while the 
+'dropschema.sql' script is updated to ensure the CASCADE option is applied for seamless removal of associated elements.
+d.sql -
+
+GROUP WORK DISTRIBUTION
+- a.SQL: Darian and Daniel came up with the initial questions that our database should answer and Connor put it into SQL form 
+- b.SQL: Davis and Connor worked on the data modifications and writing the code 
+- c.SQL: Luke came up with the two views
+- d.sql: 
+- all files were proofread and brainstormed together
+- Davis figured out Docker and Git user interfaces 
+- README: Darian did the ReadMe
