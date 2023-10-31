@@ -26,6 +26,9 @@ SET max_faculty_capacity = max_faculty_capacity + 2
 WHERE name = 'Computer Science';
 
 /*
-Goal 5: 
+Goal 5: Find the job listings that have not yet ended
 */
-SELECT * FROM *
+SELECT *
+FROM Jobs
+WHERE End_Listing_Date > GETDATE();
+
