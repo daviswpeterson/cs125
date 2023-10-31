@@ -6,7 +6,7 @@ Query: Who are the candidates that have applied for an associate professor posit
 */
 SELECT Candidates.*, Applications.date
 FROM Candidates 
-FULL OUTER JOIN Applications ON Candidates.email = Applications.candidate
+OUTER JOIN Applications ON Candidates.email = Applications.candidate
 WHERE Applications.job = 'Associate Professor';
 
 
