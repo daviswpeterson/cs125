@@ -41,7 +41,7 @@ INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, pa
 
 -- Populating Applications
 INSERT INTO Applications(application_id, job, job_id, position, tenure_track, date, candidate) VALUES
-(1, 'Associate Professor', 1, 'Computer Science', TRUE, '2023-01-20 09:30:00', 'john_doe@email.com'),
+(1, 'Assistant Professor', 1, 'Computer Science', TRUE, '2023-01-20 09:30:00', 'john_doe@email.com'),
 (2, 'Research Analyst', 2, 'Biology', FALSE, '2023-01-22 10:45:00', 'jane_doe@email.com'),
 (3, 'Associate Professor', 3, 'Computer Science', TRUE, '2023-01-25 11:15:00', 'alice@email.com'),
 (4, 'Lab Technician', 4, 'Biology', FALSE, '2023-01-28 12:30:00', 'bob@email.com'),
