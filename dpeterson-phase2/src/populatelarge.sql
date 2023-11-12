@@ -1,33 +1,33 @@
 -- For MariaDB (MySQL)
-LOAD DATA LOCAL INFILE '/Desktop/cs125/crogstad-phase2/candidates.csv'
+LOAD DATA LOCAL INFILE './candidates.csv'
 INTO TABLE Candidates
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
-LOAD DATA LOCAL INFILE '/Desktop/cs125/crogstad-phase2/applications.csv'
+LOAD DATA LOCAL INFILE './applications.csv'
 INTO TABLE Applications
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
-LOAD DATA LOCAL INFILE '/Desktop/cs125/crogstad-phase2/departments.csv'
+LOAD DATA LOCAL INFILE './departments.csv'
 INTO TABLE Departments
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
-LOAD DATA LOCAL INFILE '/Desktop/cs125/crogstad-phase2/jobs.csv'
+LOAD DATA LOCAL INFILE './jobs.csv'
 INTO TABLE Jobs
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
-LOAD DATA LOCAL INFILE '/Desktop/cs125/crogstad-phase2/letters.csv'
+LOAD DATA LOCAL INFILE './letters.csv'
 INTO TABLE Letters
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
