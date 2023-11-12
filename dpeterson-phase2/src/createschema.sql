@@ -10,7 +10,8 @@ CREATE TABLE Candidates (
     last_degree_issued VARCHAR(255),
     ssn BIGINT NOT NULL,
     gender VARCHAR(255),
-    background_check_data VARCHAR(255)
+    background_check_data VARCHAR(255),
+    PRIMARY KEY (ssn)
 );
 
 CREATE TABLE Jobs (
@@ -26,7 +27,8 @@ CREATE TABLE Jobs (
     salary INT,
     listing_date DATETIME,
     end_listing_date DATETIME,
-    openings INT
+    openings INT,
+    PRIMARY KEY (job_id)
 );
 
 CREATE TABLE Applications (
@@ -35,7 +37,9 @@ CREATE TABLE Applications (
     position VARCHAR(255),
     tenure_track BOOLEAN,
     date DATETIME,
-    candidate VARCHAR(255)
+    candidate VARCHAR(255),
+    PRIMARY KEY (application_id)
+    FOREIGN KEY (job) REFERENCES Jobs(position_title)
 );
 
 CREATE TABLE Letters (
@@ -45,7 +49,8 @@ CREATE TABLE Letters (
     start_date DATETIME,
     next_steps VARCHAR(255),
     rejection_date DATETIME,
-    denial_reason VARCHAR(255)
+    denial_reason VARCHAR(255),
+    PRIMARY KEY (letter_id)
 );
 
 CREATE TABLE Departments (
@@ -53,5 +58,6 @@ CREATE TABLE Departments (
     abbreviation VARCHAR(255),
     max_faculty_capacity INT,
     current_number_of_faculty INT,
-    academic_division VARCHAR(255)
+    academic_division VARCHAR(255),
+    PRIMARY KEY (name)
 );
