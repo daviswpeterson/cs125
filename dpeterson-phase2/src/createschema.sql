@@ -38,7 +38,7 @@ CREATE TABLE Applications (
     tenure_track BOOLEAN,
     date DATETIME,
     candidate VARCHAR(255),
-    PRIMARY KEY (application_id)
+    PRIMARY KEY (application_id),
     FOREIGN KEY (job) REFERENCES Jobs(position_title)
 );
 
