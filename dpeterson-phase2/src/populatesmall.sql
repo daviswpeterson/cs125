@@ -40,17 +40,17 @@ INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, pa
 (10, 'Psychology Researcher', 'Psychology', FALSE, TRUE, FALSE, FALSE, FALSE, NULL, 70000, '2023-03-05 17:30:00', '2023-04-05 20:00:00', 1);
 
 -- Populating Applications
-INSERT INTO Applications(application_id, job, position, tenure_track, date, candidate) VALUES
-(1, 'Associate Professor', 'Computer Science', TRUE, '2023-01-20 09:30:00', 'john_doe@email.com'),
-(2, 'Research Analyst', 'Biology', FALSE, '2023-01-22 10:45:00', 'jane_doe@email.com'),
-(3, 'Associate Professor', 'Computer Science', TRUE, '2023-01-25 11:15:00', 'alice@email.com'),
-(4, 'Lab Technician', 'Biology', FALSE, '2023-01-28 12:30:00', 'bob@email.com'),
-(5, 'Assistant Professor', 'Mathematics', TRUE, '2023-02-05 13:45:00', 'carol@email.com'),
-(6, 'History Instructor', 'History', TRUE, '2023-02-10 14:00:00', 'dave@email.com'),
-(7, 'Electrical Engineer', 'Electrical Engineering', TRUE, '2023-02-15 15:20:00', 'emily@email.com'),
-(8, 'Associate Professor', 'Computer Science', TRUE, '2023-01-28', 'associate_prof1@email.com'),
-(9, 'Associate Professor', 'Mathematics', TRUE, '2023-02-02', 'associate_prof2@email.com'),
-(10, 'Associate Professor', 'Biology', TRUE, '2023-02-05', 'associate_prof3@email.com');
+INSERT INTO Applications(application_id, job, job_id, position, tenure_track, date, candidate) VALUES
+(1, 'Associate Professor', 1, 'Computer Science', TRUE, '2023-01-20 09:30:00', 'john_doe@email.com'),
+(2, 'Research Analyst', 2, 'Biology', FALSE, '2023-01-22 10:45:00', 'jane_doe@email.com'),
+(3, 'Associate Professor', 3, 'Computer Science', TRUE, '2023-01-25 11:15:00', 'alice@email.com'),
+(4, 'Lab Technician', 4, 'Biology', FALSE, '2023-01-28 12:30:00', 'bob@email.com'),
+(5, 'Assistant Professor', 5, 'Mathematics', TRUE, '2023-02-05 13:45:00', 'carol@email.com'),
+(6, 'History Instructor', 6, 'History', TRUE, '2023-02-10 14:00:00', 'dave@email.com'),
+(7, 'Electrical Engineer', 7, 'Electrical Engineering', TRUE, '2023-02-15 15:20:00', 'emily@email.com'),
+(8, 'Associate Professor', 11, 'Computer Science', TRUE, '2023-01-28', 'associate_prof1@email.com'),
+(9, 'Associate Professor', 12, 'Mathematics', TRUE, '2023-02-02', 'associate_prof2@email.com'),
+(10, 'Associate Professor', 13, 'Biology', TRUE, '2023-02-05', 'associate_prof3@email.com');
 
 
 -- Populating Letters
