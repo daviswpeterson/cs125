@@ -48,9 +48,9 @@ INSERT INTO Applications(application_id, job, job_id, position, tenure_track, da
 (5, 'Assistant Professor', 5, 'Mathematics', TRUE, '2023-02-05 13:45:00', 'carol@email.com'),
 (6, 'History Instructor', 6, 'History', TRUE, '2023-02-10 14:00:00', 'dave@email.com'),
 (7, 'Electrical Engineer', 7, 'Electrical Engineering', TRUE, '2023-02-15 15:20:00', 'emily@email.com'),
-(8, 'Associate Professor', 11, 'Computer Science', TRUE, '2023-01-28', 'associate_prof1@email.com'),
-(9, 'Associate Professor', 12, 'Mathematics', TRUE, '2023-02-02', 'associate_prof2@email.com'),
-(10, 'Associate Professor', 13, 'Biology', TRUE, '2023-02-05', 'associate_prof3@email.com');
+(8, 'Chemistry Lab Assistant', 8, 'Chemistry', FALSE, '2023-01-28', 'associate_prof1@email.com'),
+(9, 'Economics Professor', 9, 'Economics', TRUE, '2023-02-02', 'associate_prof2@email.com'),
+(10, 'Psychology Researcher', 10, 'Psychology', FALSE, '2023-02-05', 'associate_prof3@email.com');
 
 
 -- Populating Letters
