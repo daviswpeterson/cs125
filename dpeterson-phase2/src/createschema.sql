@@ -33,13 +33,14 @@ CREATE TABLE Jobs (
 
 CREATE TABLE Applications (
     application_id INT NOT NULL,
-    job VARCHAR(255),
+    position VARCHAR(255),
+    job_id INT NOT NULL,
     position VARCHAR(255),
     tenure_track BOOLEAN,
     date DATETIME,
     candidate VARCHAR(255),
     PRIMARY KEY (application_id),
-    FOREIGN KEY (job) REFERENCES Jobs(position_title)
+    FOREIGN KEY (job_id) REFERENCES Jobs(job_id)
 );
 
 CREATE TABLE Letters (
