@@ -33,7 +33,7 @@ CREATE TABLE Jobs (
 
 CREATE TABLE Applications (
     application_id INT NOT NULL,
-    position VARCHAR(255),
+    job VARCHAR(255),
     job_id INT NOT NULL,
     position VARCHAR(255),
     tenure_track BOOLEAN,
