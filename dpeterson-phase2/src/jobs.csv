@@ -1,5 +1,5 @@
 job_id,position_title,department,tenure_track,full_time,part_time,adjunct,hourly,per_hour_wage,salary,listing_date,end_listing_date,openings
-0,Professor,Computer Science,True,True,True,True,True,15.426769372472267,127238,2012-02-16 05:47:14,2022-04-08 19:08:20,2
+0,TEST_JOB,TEST_POSITION,True,True,True,True,True,15.426769372472267,127238,2012-02-16 05:47:14,2022-04-08 19:08:20,2
 1,Associate Professor,Mathematics,True,True,False,False,True,89.20581103058277,73605,2002-10-28 22:07:55,2007-02-24 23:44:13,6
 2,Associate Professor,Computer Science,False,False,True,False,True,99.38773762474642,98200,2013-03-28 15:30:48,2023-05-15 20:26:02,6
 3,Professor,Mathematics,False,False,False,False,False,51.35666085610164,104011,2007-11-14 13:36:42,2012-07-14 01:25:23,3
