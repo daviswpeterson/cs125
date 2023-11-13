@@ -1,12 +1,12 @@
 -- For MariaDB (MySQL)
-LOAD DATA LOCAL INFILE './candidates.csv'
+LOAD DATA LOCAL INFILE './applications.csv'
 INTO TABLE Candidates
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
-LOAD DATA LOCAL INFILE './applications.csv'
+LOAD DATA LOCAL INFILE './candidates.csv'
 INTO TABLE Applications
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
