@@ -11,7 +11,8 @@ CREATE TABLE Candidates (
     ssn BIGINT NOT NULL,
     gender VARCHAR(255),
     background_check_data VARCHAR(255),
-    PRIMARY KEY (ssn)
+    PRIMARY KEY (ssn),
+    CHECK (age>=18)
 );
 
 CREATE TABLE Jobs (
@@ -60,5 +61,6 @@ CREATE TABLE Departments (
     max_faculty_capacity INT,
     current_number_of_faculty INT,
     academic_division VARCHAR(255),
-    PRIMARY KEY (name)
+    PRIMARY KEY (name),
+    CONSTRAINT not_overfilled CHECK (current_number_of_faculty <= max_faculty_capacity)
 );
