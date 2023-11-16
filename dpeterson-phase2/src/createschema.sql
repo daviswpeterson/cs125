@@ -12,7 +12,8 @@ CREATE TABLE Candidates (
     gender VARCHAR(255),
     background_check_data VARCHAR(255),
     PRIMARY KEY (ssn),
-    CHECK (age>=18)
+    CHECK (age>=18),
+    CHECK (years_experience >= 1)
 );
 
 CREATE TABLE Jobs (
