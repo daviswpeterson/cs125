@@ -53,7 +53,8 @@ CREATE TABLE Letters (
     next_steps VARCHAR(255),
     rejection_date DATETIME,
     denial_reason VARCHAR(255),
-    PRIMARY KEY (letter_id)
+    PRIMARY KEY (letter_id),
+    CHECK (offer_or_rejection = 'Offer' OR offer_or_rejection = 'Rejection')
 );
 
 CREATE TABLE Departments (
