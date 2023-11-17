@@ -1,20 +1,20 @@
 /* Our Procedure */
 CREATE PROCEDURE update_unutilized_positions
 BEGIN
-    DECLARE jobs_cursor CURSOR FOR SELECT department, openings FROM Jobs;
-    OPEN jobs_cursor;
-        WHILE (@@FETCH_STATUS = 0)
         /*
         max faculty - current faculty - openings
         */
-        BEGIN
-            FETCH NEXT FROM jobs_cursor INTO dept, number_of_openings;
-            UPDATE Departments
-            SET unutilized_positions = Departments.max_faculty_capacity - Departments.current_number_of_faculty - number_of_openings
-            WHERE Departments.name = jobs_cursor.dept;
-        END;
-    CLOSE jobs_cursor;
-    DEALLOCATE jobs_cursor;
+    INSERT INTO Departments (unutilized_positions)
+    VALUES (
+        SELECT (max_faculty_capacity - current_number_of_faculty - openings_sum) AS "unutilized"
+        FROM Departments
+        INNER JOIN
+        (SELECT  department,
+        SUM(openings) AS "openings_sum"
+        FROM Jobs
+        GROUP BY department) A
+        ON Departments.name = A.department
+    )
 END;
     
 /*    
