@@ -1,3 +1,4 @@
+/* Our Procedure */
 CREATE PROCEDURE 
     update_unutilized_positions
     MODIFIES SQL DATA
@@ -20,3 +21,11 @@ BEGIN
 END;
     
         
+/* Our Query Utilizing the Procedure */
+/* Find the departments with unutilized positions greater than 5 */
+CALL update_unutilized_positions;
+SELECT
+    name,
+    unutilized_positions
+FROM Departments
+WHERE unutilized_positions > 5;
