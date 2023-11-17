@@ -6,7 +6,7 @@ BEGIN
         */
     INSERT INTO Departments (unutilized_positions)
     VALUES (
-        SELECT (max_faculty_capacity - current_number_of_faculty - openings_sum) AS "unutilized"
+        SELECT (max_faculty_capacity - current_number_of_faculty - openings_sum) AS "unutilized_positions"
         FROM Departments
         INNER JOIN
         (SELECT  department,
