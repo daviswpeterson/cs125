@@ -4,17 +4,21 @@ BEGIN
         /*
         max faculty - current faculty - openings
         */
-    UPDATE Departments 
-        SET unutilized_positions = B.unutilized_positions
-        FROM
-        (SELECT (max_faculty_capacity - current_number_of_faculty - A.openings_sum) AS "unutilized_positions"
-        FROM Departments
+    UPDATE Departments
         INNER JOIN
-        (SELECT  department,
-        SUM(openings) AS "openings_sum"
-        FROM Jobs
-        GROUP BY department) A
-        ON Departments.name = A.department) B
+        (
+                SELECT (max_faculty_capacity - current_number_of_faculty - A.openings_sum) AS "unutilized_positions", department
+                FROM Departments
+                INNER JOIN
+                (
+                        SELECT  department, SUM(openings) AS "openings_sum"
+                        FROM Jobs
+                        GROUP BY department
+                ) A
+                ON Departments.name = A.department
+        ) B
+        ON Departments.name = B.department
+        SET Departments.unutilized_positions = B.unutilized_positions
 END;
     
 /*    
