@@ -1,16 +1,22 @@
 CREATE PROCEDURE 
-    procedure_name
+    update_unutilized_positions
     MODIFIES SQL DATA
 BEGIN
-    SET Counter=1
-        WHILE (Counter < SELECT Count(*) FROM Jobs)
+    DECLARE jobs_cursor CURSOR FOR SELECT department, openings FROM Jobs;
+    OPEN jobs_cursor;
+    FETCH NEXT FROM jobs_cursor;
+        WHILE (@@FETCH_STATUS = 0)
         /*
-        Iterate through the rows of Jobs
-        For each row SELECT the number of openings for each departments
-        SET (for Departments) current_number_of_faculty = max_faculty_capacity - the above value 
+        max faculty - current faculty - openings
         */
-        BEGIN
+        BEGIN;
+            FETCH NEXT FROM jobs_cursor INTO dept, number_of_openings;
             UPDATE Departments
-        END
+            SET unutilized_positions = Departments.max_faculty_capacity - Departments.current_number_of_faculty - number_of_openings
+            WHERE Departments.name = dept;
+        END;
+    CLOSE jobs_cursor;
+    DEALLOCATE jobs_cursor;
+END;
     
         
