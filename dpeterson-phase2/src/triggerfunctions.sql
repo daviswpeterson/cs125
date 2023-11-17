@@ -29,3 +29,44 @@ SELECT
     unutilized_positions
 FROM Departments
 WHERE unutilized_positions > 5;
+
+
+
+
+CREATE FUNCTION CalculateAverageSalary(dept_name VARCHAR(255))
+RETURNS DECIMAL(10, 2)
+BEGIN
+    DECLARE avg_salary DECIMAL(10, 2);
+    
+    SELECT AVG(salary) INTO avg_salary
+    FROM jobs
+    WHERE department = dept_name;
+    
+    RETURN avg_salary;
+END //
+
+
+CREATE TRIGGER UpdateOnJobDeletion
+AFTER DELETE ON jobs
+FOR EACH ROW
+BEGIN
+    DECLARE job_type BOOLEAN;
+    DECLARE avg_sal DECIMAL(10, 2);
+    
+    SELECT full_time INTO job_type
+    FROM jobs
+    WHERE job_id = OLD.job_id;
+    
+    IF job_type = TRUE THEN
+        UPDATE departments
+        SET current_number_of_faculty = current_number_of_faculty - 1
+        WHERE name = OLD.department;
+        
+        SET avg_sal = (SELECT CalculateAverageSalary(OLD.department));
+        
+        UPDATE departments
+        SET average_salary = avg_sal
+        WHERE name = OLD.department;
+    END IF;
+END //
+
