@@ -1,13 +1,13 @@
 /* Our Procedure */
-CREATE PROCEDURE update_unutilized_positions;
-BEGIN;
+CREATE PROCEDURE update_unutilized_positions
+BEGIN
     DECLARE jobs_cursor CURSOR FOR SELECT department, openings FROM Jobs;
     OPEN jobs_cursor;
         WHILE (@@FETCH_STATUS = 0)
         /*
         max faculty - current faculty - openings
         */
-        BEGIN;
+        BEGIN
             FETCH NEXT FROM jobs_cursor INTO dept, number_of_openings;
             UPDATE Departments
             SET unutilized_positions = Departments.max_faculty_capacity - Departments.current_number_of_faculty - number_of_openings
