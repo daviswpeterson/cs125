@@ -1,6 +1,6 @@
 /* Our Procedure */
-CREATE PROCEDURE update_unutilized_positions
-BEGIN
+CREATE PROCEDURE update_unutilized_positions;
+BEGIN;
     DECLARE jobs_cursor CURSOR FOR SELECT department, openings FROM Jobs;
     OPEN jobs_cursor;
         WHILE (@@FETCH_STATUS = 0)
