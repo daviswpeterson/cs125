@@ -44,4 +44,13 @@ FROM Jobs
 WHERE end_listing_date < CURRENT_TIMESTAMP;
 
 
+/* Hopefully helps us troubleshoot*/
+
+SELECT a.job_id
+FROM Applications a
+LEFT JOIN Jobs j ON a.job_id = j.job_id
+WHERE j.job_id IS NULL;
+
+
+
 
