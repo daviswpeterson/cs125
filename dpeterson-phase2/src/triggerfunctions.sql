@@ -1,7 +1,5 @@
 /* Our Procedure */
-CREATE PROCEDURE 
-    update_unutilized_positions
-    MODIFIES SQL DATA
+CREATE PROCEDURE update_unutilized_positions
 BEGIN
     DECLARE jobs_cursor CURSOR FOR SELECT department, openings FROM Jobs;
     OPEN jobs_cursor;
@@ -19,7 +17,7 @@ BEGIN
     DEALLOCATE jobs_cursor;
 END;
     
-        
+/*    
 /* Our Query Utilizing the Procedure */
 /* Find the departments with unutilized positions greater than 5 */
 CALL update_unutilized_positions;
@@ -68,4 +66,5 @@ BEGIN
         WHERE name = OLD.department;
     END IF;
 END //
+*/
 
