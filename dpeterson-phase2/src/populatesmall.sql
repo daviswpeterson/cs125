@@ -14,17 +14,17 @@ INSERT INTO Candidates(degree_level, age, years_experience, previous_occupation,
 ('PhD', 38, 12, 'Associate Professor', 'African American', 'Christian', '3456789012', 'associate_prof3@email.com', 'PhD in Biology', '112233875', 'Male', 'Clear');
 
 -- Populating Departments
-INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number_of_faculty, academic_division) VALUES
-('Computer Science', 'CS', 100, 60, 'Engineering'),
-('Biology', 'BIO', 80, 55, 'Science'),
-('Mathematics', 'MATH', 90, 45, 'Science'),
-('History', 'HIST', 70, 30, 'Humanities'),
-('Electrical Engineering', 'EE', 110, 75, 'Engineering'),
-('Chemistry', 'CHEM', 85, 50, 'Science'),
-('Economics', 'ECON', 75, 40, 'Business'),
-('Psychology', 'PSYCH', 60, 35, 'Social Sciences'),
-('Mechanical Engineering', 'ME', 95, 70, 'Engineering'),
-('English', 'ENG', 80, 45, 'Humanities');
+INSERT INTO Departments(name, abbreviation, max_faculty_capacity, current_number_of_faculty, academic_division, unutilized_positions) VALUES
+('Computer Science', 'CS', 100, 60, 'Engineering', NULL),
+('Biology', 'BIO', 80, 55, 'Science', NULL),
+('Mathematics', 'MATH', 90, 45, 'Science', NULL),
+('History', 'HIST', 70, 30, 'Humanities', NULL),
+('Electrical Engineering', 'EE', 110, 75, 'Engineering', NULL),
+('Chemistry', 'CHEM', 85, 50, 'Science', NULL),
+('Economics', 'ECON', 75, 40, 'Business', NULL),
+('Psychology', 'PSYCH', 60, 35, 'Social Sciences', NULL),
+('Mechanical Engineering', 'ME', 95, 70, 'Engineering', NULL),
+('English', 'ENG', 80, 45, 'Humanities', NULL);
 
 -- Populating Jobs
 INSERT INTO Jobs(job_id, position_title, department, tenure_track, full_time, part_time, adjunct, hourly, per_hour_wage, salary, listing_date, end_listing_date, openings) VALUES
