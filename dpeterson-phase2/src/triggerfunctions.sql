@@ -18,8 +18,8 @@ BEGIN
 END;
     
 /*    
-/* Our Query Utilizing the Procedure */
-/* Find the departments with unutilized positions greater than 5 */
+Our Query Utilizing the Procedure
+Find the departments with unutilized positions greater than 5
 CALL update_unutilized_positions;
 SELECT
     name,
