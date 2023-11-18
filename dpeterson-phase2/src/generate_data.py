@@ -29,12 +29,12 @@ with open('jobs.csv', 'w', newline='') as file:
         writer.writerow([
             i,
             random.choice(["Professor", "Associate Professor", "Assistant Professor"]),
-            random.choice(["Computer Science", "Physics", "Mathematics"]),
-            random.choice([True, False]),
-            random.choice([True, False]),
-            random.choice([True, False]),
-            random.choice([True, False]),
-            random.choice([True, False]),
+            random.choice(["Computer Science", "Physics", "Mathematics", "English", "Art", "Electrical Engineering"]),
+            random.choice([1, 0]),
+            random.choice([1, 0]),
+            random.choice([1, 0]),
+            random.choice([1, 0]),
+            random.choice([1, 0]),
             random.uniform(15.0, 100.0),
             random.randint(50000, 150000),
             f"{random.randint(2000,2023)}-{random.randint(1,12):02d}-{random.randint(1,28):02d} {random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
@@ -44,13 +44,14 @@ with open('jobs.csv', 'w', newline='') as file:
 
 with open('applications.csv', 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["application_id", "job", "position", "tenure_track", "date", "candidate"])
+    writer.writerow(["application_id", "job", "job_id", "position", "tenure_track", "date", "candidate"])
     for i in range(10000):
         writer.writerow([
             i,
+            i,
             random.choice(["Professor", "Associate Professor", "Assistant Professor"]),
-            random.choice(["Computer Science", "Physics", "Mathematics"]),
-            random.choice([True, False]),
+            random.choice(["Computer Science", "Physics", "Mathematics", "English", "Art", "Electrical Engineering"]),
+            random.choice([1, 0]),
             f"{random.randint(2000,2023)}-{random.randint(1,12):02d}-{random.randint(1,28):02d} {random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
             f"user{random.randint(1000, 9999)}@example.com"
         ])
@@ -74,8 +75,8 @@ with open('departments.csv', 'w', newline='') as file:
     writer.writerow(["name", "abbreviation", "max_faculty_capacity", "current_number_of_faculty", "academic_division"])
     for _ in range(10000):
         writer.writerow([
-            random.choice(["Computer Science", "Physics", "Mathematics"]),
-            random.choice(["CS", "PHYS", "MATH"]),
+            random.choice(["Computer Science", "Physics", "Mathematics", "English", "Art", "Electrical Engineering"]),
+            random.choice(["CS", "PHYS", "MATH", "ENG", "ART", "EENG"]),
             random.randint(20, 100),
             random.randint(5, 20),
             random.choice(["Science", "Engineering", "Arts"])
