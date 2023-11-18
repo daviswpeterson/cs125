@@ -28,8 +28,8 @@ createschema.sql:
 triggerfunctions.sql:
   - Procedure: Our procedure works to find the number of unutilized jobs for each department by finding the max_faculty_capacity and subtracting both the current_number_of_faculty and openings.
     - Query: Tries to find the departments with unutilized positions greater than 5, to alert those departments that they need to hire more faculty. 
-  - Trigger:
-    - Query: 
+  - Trigger: Our trigger works to update the average salary when jobs are deleted from the department automatically whenever a job is deleted. 
+    - Query: Deleting a job from the Jobs table
 
 #### GROUP MEMBER CONTRIBUTIONS:
 Relation schemas for our project (Keys for the dropschema): Davis 
