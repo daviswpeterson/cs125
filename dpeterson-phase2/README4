@@ -21,13 +21,13 @@ d.sql - The 'd.sql' file creates and drops the indexes and shows the time compar
 
 createschema.sql:
   - Keys and Foreign Keys: created keys for each of the tables that are in the database, ssn for Candidates, job_id for jobs, application_id for applications, letter_id for letters,
-and name for departments. We also included a foreign key for for Applications (job_id) that references Jobs.
+    and name for departments. We also included a foreign key for for Applications (job_id) that references Jobs.
   - Checks: We included checks for Candidates include guaranteeing age over 18, and years_of_experience being > 1. For Letters we made sure that the letter types were either 'Rejection' or 'Offer'
-to ensure that we actually received a proper letter. For Departments we also included the fact that the maximum capacity for people cannot be exceeded.
+    to ensure that we actually received a proper letter. For Departments we also included the fact that the maximum capacity for people cannot be exceeded.
 
 triggerfunctions.sql:
-  - Procedure:
-    - Query: Tries to find the departments with unutilized positions greater than 5, to alert those departments they need to hire more faculty. 
+  - Procedure: Our procedure works to find the number of unutilized jobs for each department by finding the max_faculty_capacity and subtracting both the current_number_of_faculty and openings.
+    - Query: Tries to find the departments with unutilized positions greater than 5, to alert those departments that they need to hire more faculty. 
   - Trigger:
     - Query: 
 
