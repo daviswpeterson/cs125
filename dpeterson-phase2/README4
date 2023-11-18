@@ -31,6 +31,10 @@ triggerfunctions.sql:
   - Trigger: Our trigger works to update the average salary when jobs are deleted from the department automatically whenever a job is deleted. 
     - Query: Deleting a job from the Jobs table
 
+New csvs and Populatelarge: 
+  - Reflects the changes from the foreign keys and helping to eliminate some warnings and bugs from our original Generatedata.py. These will be alongside the old ones while we figure out
+  else needs to be done to eliminate warnings and subsequent skips.
+
 #### GROUP MEMBER CONTRIBUTIONS:
 Relation schemas for our project (Keys for the dropschema): Davis 
 Attribute based and tuple based CHECK constraints: Davis, Connor
