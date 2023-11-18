@@ -21,7 +21,7 @@ BEGIN
         SET Departments.unutilized_positions = B.unutilized_positions
 END;
     
-/*    
+  
 Our Query Utilizing the Procedure
 Find the departments with unutilized positions greater than 5
 CALL update_unutilized_positions;
@@ -41,10 +41,10 @@ BEGIN
     
     SELECT AVG(salary) INTO avg_salary
     FROM jobs
-    WHERE department = dept_name;
+    WHERE department = dept_name 
     
     RETURN avg_salary;
-END //
+END; //
 
 
 CREATE TRIGGER UpdateOnJobDeletion
@@ -69,6 +69,6 @@ BEGIN
         SET average_salary = avg_sal
         WHERE name = OLD.department;
     END IF;
-END //
-*/
+END; //
+
 
