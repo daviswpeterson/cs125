@@ -33,29 +33,33 @@ WHERE unutilized_positions > 5;
 
 
 
+DELIMITER //
 
-CREATE FUNCTION CalculateAverageSalary(dept_name VARCHAR(255))
-RETURNS DECIMAL(10, 2)
+CREATE FUNCTION CalcAvg(IN dept_name VARCHAR(255))
+RETURNS FLOAT
 BEGIN
-    DECLARE avg_salary DECIMAL(10, 2);
+    DECLARE avg_salary FLOAT;
     
     SELECT AVG(salary) INTO avg_salary
     FROM jobs
-    WHERE department = dept_name 
+    WHERE department = dept_name; 
     
     RETURN avg_salary;
-END; //
+END //
 
+DELIMITER ;
+
+DELIMITER //
 
 CREATE TRIGGER UpdateOnJobDeletion
-AFTER DELETE ON jobs
+AFTER DELETE ON Jobs
 FOR EACH ROW
 BEGIN
     DECLARE job_type BOOLEAN;
     DECLARE avg_sal DECIMAL(10, 2);
     
     SELECT full_time INTO job_type
-    FROM jobs
+    FROM Jobs
     WHERE job_id = OLD.job_id;
     
     IF job_type = TRUE THEN
@@ -70,5 +74,5 @@ BEGIN
         WHERE name = OLD.department;
     END IF;
 END; //
-
+DELIMITER ;
 
