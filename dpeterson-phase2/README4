@@ -1,35 +1,39 @@
-PHASE 4 README FILE BIG PAPA GROUP 
+PHASE 4 README FILE PAPA GROUP 
 GROUP MEMBERS: Davis Peterson, Connor Rogstad, Daniel Patterson, Darian Choi, Luke Rozinskas 
 
-PHASE 3 FILES
+PAPA GROUPS REPOSITORY LINK
+https://github.com/daviswpeterson/cs125
 
+FILE DESCRIPTIONS
 a.sql - The 'a.sql' file contains SQL queries that retrieve wanted information from the database, 
 answering specific questions related to candidate applications, salaries, faculty capacity, candidate 
 qualifications, and departmental statistics. 
+
 b.sql - The 'b.sql' file contains five SQL data modification commands that utilize advanced features 
 such as updating multiple tuples, deleting specific sets of tuples, and inserting query results. 
+
 c.sql - The 'c.sql' file generates two purposeful views within the database, facilitating efficient data analysis and retrieval.
 Additionally, it includes queries utilizing these views, limited by the LIMIT clause for concise output, while the 
-'dropschema.sql' script is updated to ensure the CASCADE option is applied for seamless removal of associated elements.
+
+'dropschema.sql' - script is updated to ensure the CASCADE option is applied for seamless removal of associated elements.
+
 d.sql - The 'd.sql' file creates and drops the indexes and shows the time comparisons. 
 
-PHASE 4 FILES
-
-Createschema.sql - Keys and Foreign Keys: created keys for each of the tables that are in the database, ssn for Candidates, job_id for jobs, application_id for applications, letter_id for letters,
+createschema.sql:
+  - Keys and Foreign Keys: created keys for each of the tables that are in the database, ssn for Candidates, job_id for jobs, application_id for applications, letter_id for letters,
 and name for departments. We also included a foreign key for job_id for applications. 
-Checks: We included checks for Candidates include guaranteeing age over 18, and years_of_experience being > 1. For Letters we made sure that the letter types were either 'Rejection' or 'Offer'
+  - Checks: We included checks for Candidates include guaranteeing age over 18, and years_of_experience being > 1. For Letters we made sure that the letter types were either 'Rejection' or 'Offer'
 to ensure that we actually received a proper letter. For Departments we also included the fact that the maximum capacity for people cannot be exceeded
 
 triggerfunctions.sql - 
 
 
+GROUP MEMBER CONTRIBUTIONS:
+Relation schemas for our project (Keys for the dropschema): Davis Peterson
+Attribute based and tuple based CHECK constraints: Davis Peterson, Connor Rogstad
 
 
 
 
 
 
-
-
-
-URL: https://github.com/daviswpeterson/cs125
