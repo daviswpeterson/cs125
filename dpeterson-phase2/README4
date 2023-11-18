@@ -25,17 +25,17 @@ and name for departments. We also included a foreign key for for Applications (j
   - Checks: We included checks for Candidates include guaranteeing age over 18, and years_of_experience being > 1. For Letters we made sure that the letter types were either 'Rejection' or 'Offer'
 to ensure that we actually received a proper letter. For Departments we also included the fact that the maximum capacity for people cannot be exceeded.
 
-triggerfunctions.sql - 
+triggerfunctions.sql:
+  - Procedure:
+    - Query: Tries to find the departments with unutilized positions greater than 5, to alert those departments they need to hire more faculty. 
+  - Trigger:
+    - Query: 
 
 #### GROUP MEMBER CONTRIBUTIONS:
-Relation schemas for our project (Keys for the dropschema): Davis Peterson
-Attribute based and tuple based CHECK constraints: Davis Peterson, Connor Rogstad
-Trigger: Darian
+Relation schemas for our project (Keys for the dropschema): Davis 
+Attribute based and tuple based CHECK constraints: Davis, Connor
+Trigger: Darian, Daniel
 Createschema debugging: Luke
 Procedures and Query: Davis and Connor
-
-
-
-
-
+README: Luke, Connor, Davis
 
