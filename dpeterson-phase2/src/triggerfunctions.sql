@@ -1,5 +1,5 @@
 /* Our Procedure */
-CREATE PROCEDURE update_unutilized_positions
+CREATE or REPLACE PROCEDURE update_unutilized_positions
 BEGIN
         /*
         max faculty - current faculty - openings
@@ -35,7 +35,7 @@ WHERE unutilized_positions > 5;
 
 DELIMITER //
 
-CREATE FUNCTION CalcAvg(IN dept_name VARCHAR(255))
+CREATE or REPLACE FUNCTION CalcAvg(IN dept_name VARCHAR(255))
 RETURNS FLOAT
 BEGIN
     DECLARE avg_salary FLOAT;
@@ -51,7 +51,7 @@ DELIMITER ;
 
 DELIMITER //
 
-CREATE TRIGGER UpdateOnJobDeletion
+CREATE or REPLACE TRIGGER UpdateOnJobDeletion
 AFTER DELETE ON Jobs
 FOR EACH ROW
 BEGIN
