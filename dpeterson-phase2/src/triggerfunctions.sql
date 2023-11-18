@@ -41,7 +41,7 @@ BEGIN
     DECLARE avg_salary FLOAT;
     
     SELECT AVG(salary) INTO avg_salary
-    FROM jobs
+    FROM Jobs
     WHERE department = dept_name; 
     
     RETURN avg_salary;
